@@ -1,0 +1,135 @@
+/* Background styling */
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Center the login form with Glassmorphism effect */
+.auth-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Login button */
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4285f4, #357ae8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #357ae8, #2a5bb7);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Forgot password link */
+.forgot-password {
+  color: #f8f8f8;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Create account link */
+.toggle-auth {
+  color: #f8f8f8;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.toggle-auth:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Message (success/error) */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #21d07a;
+}
+
+/* Password input with toggle button */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+}
+
+.toggle-password:hover {
+  color: #fff;
+}
