@@ -5,7 +5,7 @@ import "../Auth.css";
 export default function Login({ setUser }) {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate();   
 
   const handleLogin = (e) => {
     e.preventDefault(); // Prevent page reload
